@@ -1,13 +1,14 @@
 //Funcionamiento que aplica el estilo de la opcion selecionada y quita previamente selecionada 
-function selecionar(link){
-    var opcion = document.querySelectorAll('#links  a');
+function seleccionar(link) {
+    var opciones = document.querySelectorAll('#links  a');
     opciones[0].className = "";
     opciones[1].className = "";
     opciones[2].className = "";
     opciones[3].className = "";
     opciones[4].className = "";
-    link.className = "Selecionado";
+    link.className = "seleccionado";
 }
+
 
 //Funcion que muestra el menu responsive 
 function responsiveMenu() {
@@ -20,7 +21,7 @@ function responsiveMenu() {
 }
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function() { efectoHabilidades () };
+window.onscroll = function() { efectoHabilidades() };
 
 //funcion que aplica la animacion de la barra de habilidades 
 function efectoHabilidades() {
@@ -32,4 +33,5 @@ function efectoHabilidades() {
         document.getElementById("bd").classList.add("barra-progreso3");
         document.getElementById("ps").classList.add("barra-progreso4");
     }
+
 }
