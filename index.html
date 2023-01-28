@@ -9,7 +9,8 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Portafolio</title>
+    <link rel="icon" href="https://images.vexels.com/media/users/3/157295/isolated/lists/5ab1a21aaafa93397c0d6eedcb24731e-icono-de-computadora-portatil.png">
+    <title>KL Desarrollador De software</title>
 </head>
 
 <body>
@@ -21,33 +22,28 @@
                     <h1>/KL/</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#servicios">SERVICIOS</a></li>
-                            <li><a href="#portafolio">PORTAFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">Portafolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
                         </ul>
                     </nav>
-
-                    <!--Iconos para el menu responsive -->
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
-
-                    <!--Iconos de las redes sociales-->
                     <div class="redes">
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UC7RAIkclR15jwxUdQ9Rk67w"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/dk.paredes.5/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/KevinLa74759762"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
             </header>
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>Kevin Largo</span>, Desarrollador de Software</h2>
-                <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ratione porro
-                    expedita eius dolore illo deserunt.</p>
-                <a href="#portafolio">Ir al Portafolio</a>
+                <h2>Soy <span>Kevin Largo</span>, Desarrollador De Software</h2>
+                <p class="descripcion">Estudiante de la Carrera de Desarrollado de software</p>
+                <a href="#portfolio">Ir a Portafolio</a>
             </div>
         </div>
     </section>
@@ -71,7 +67,6 @@
     </section>
 
     <!--Seccion Servicios-->
-
     <section id="servicios">
         <h3 class="titulo-seccion">Mis servicios</h3>
         <div class="fila">
@@ -80,71 +75,33 @@
                 <h4>Diseño de Sitios Web</h4>
                 <hr>
                 <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
+                    <li>Descripcion:</li>
                 </ul>
                 <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
             </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
-                <h4>Programación PHP</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
-                <h4>Posicionamiento SEO</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-database"></i></span>
-                <h4>Alojamiento de Sitios</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
-            </div>
+
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-palette"></i></span>
                 <h4>Diseñador Gráfico</h4>
                 <hr>
                 <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
+                    <li>Descripcion:</li>
                 </ul>
                 <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
             </div>
+
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
-                <h4>Consultor Externo</h4>
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
                 <hr>
                 <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
+                    <li>Descripcion:</li>
                 </ul>
                 <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
             </div>
         </div>
     </section>
+
     <!--Seccion de Habilidades-->
     <div class="contenedor-skills" id="skills">
         <h3>HABILIDADES </h3>
@@ -189,6 +146,122 @@
             </div>
         </div>
     </div>
+
+    <!-- Seccion de Portafolio -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                    
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="" >
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://previews.123rf.com/images/vectorknight/vectorknight1803/vectorknight180300065/97934244-inicio-programador-proyecto-empresarial-idea-gesti%C3%B3n-de-proyectos-de-dise%C3%B1o-plano-ilustraci%C3%B3n-vector.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion de contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- seccion del pie de pagina -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://www.youtube.com/channel/UC7RAIkclR15jwxUdQ9Rk67w"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/dk.paredes.5/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/KevinLa74759762"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+    </footer>
 
     <script src="script.js"></script>
 

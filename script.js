@@ -9,7 +9,6 @@ function seleccionar(link) {
     link.className = "seleccionado";
 }
 
-
 //Funcion que muestra el menu responsive 
 function responsiveMenu() {
     var x = document.getElementById("nav");
