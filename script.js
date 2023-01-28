@@ -9,7 +9,7 @@ function seleccionar(link) {
     link.className = "seleccionado";
 }
 
-//Funcion que muestra el menu responsive 
+//esta funcion muestra el menu responsive 
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if (x.className === "") {
@@ -19,7 +19,7 @@ function responsiveMenu() {
     }
 }
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
+//detecta el scrolling para que se pueda aplicar la animacion de la barra de habilidades
 window.onscroll = function() { efectoHabilidades() };
 
 //funcion que aplica la animacion de la barra de habilidades 
